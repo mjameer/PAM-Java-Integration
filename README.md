@@ -13,7 +13,7 @@ We have two main components in our application: PAMWebClientConfig and ConnectPA
 #### PAMWebClientConfig:
 
 This class is responsible for setting up WebClient with SSL to communicate securely with CyberArk Vault.
-We load the SSL certificate from the keystore and configure RestTemplate accordingly.
+We load the SSL certificate from the keystore and configure WebClient accordingly.
 
 #### ConnectPAMWebClient:
 
