@@ -8,14 +8,14 @@ Java 21, Spring Boot 3.2.4, httpclient5.x
 
 ## Exploring the Code: 
 
-We have two main components in our application: PAMRestTemplate and ConnectPAM.
+We have two main components in our application: PAMWebClientConfig and ConnectPAMWebClient.
 
-### PAMRestTemplate:
+#### PAMWebClientConfig:
 
 This class is responsible for setting up WebClient with SSL to communicate securely with CyberArk Vault.
 We load the SSL certificate from the keystore and configure RestTemplate accordingly.
 
-### ConnectPAMWebClient:
+#### ConnectPAMWebClient:
 
 This class acts as a gateway for interacting with the CyberArk Vault. It utilizes WebClient to make a request to the CyberArk Vault URL and fetch the credentials.
 
