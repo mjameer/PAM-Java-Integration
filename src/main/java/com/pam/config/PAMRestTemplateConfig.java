@@ -31,7 +31,7 @@ import java.security.cert.CertificateException;
 
 @Slf4j
 @Configuration
-public class PAMRestTemplate {
+public class PAMRestTemplateConfig {
 
     @Autowired
     private ResourceLoader resourceLoader;

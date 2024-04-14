@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @Slf4j
 @Component
-public class ConnectPAM {
+public class ConnectPAMRestTemplate {
 
     @Value("${pam.url}")
     private String pamUrl;
@@ -24,7 +24,7 @@ public class ConnectPAM {
     /**
      * Fetches Credential from PAM Gateway
      */
-    public void fetchCredential() {
+    public void fetchDataFromService() {
         try {
             log.info("Calling PAM to get Credential...");
             PAMResponseDTO response = pamRestTemplate.getForObject(pamUrl, PAMResponseDTO.class);

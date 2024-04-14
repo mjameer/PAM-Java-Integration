@@ -12,11 +12,11 @@ We have two main components in our application: PAMRestTemplate and ConnectPAM.
 
 ### PAMRestTemplate:
 
-This class is responsible for setting up RestTemplate with SSL to communicate securely with CyberArk Vault.
+This class is responsible for setting up WebClient with SSL to communicate securely with CyberArk Vault.
 We load the SSL certificate from the keystore and configure RestTemplate accordingly.
 
-### ConnectPAM:
+### ConnectPAMWebClient:
 
-This class acts as a gateway for interacting with the CyberArk Vault. It utilizes RestTemplate to make a request to the CyberArk Vault URL and fetch the credentials.
+This class acts as a gateway for interacting with the CyberArk Vault. It utilizes WebClient to make a request to the CyberArk Vault URL and fetch the credentials.
 
 
